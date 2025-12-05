@@ -1,0 +1,122 @@
+/* src/App.css */
+body {
+  background-color: #f4ecd8; /* Màu kem giấy cũ */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3e2723; /* Màu chữ nâu đen */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Tiêu đề chính */
+h1 {
+  text-align: center;
+  color: #3e2723;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #5d4037;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.header-container {
+  text-align: center;
+}
+
+/* Khung chứa Form (Card style) */
+.form-card {
+  background-color: #fff8e1; /* Màu gỗ sáng/kem */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(62, 39, 35, 0.2);
+  border: 1px solid #d7ccc8;
+  margin-bottom: 30px;
+}
+
+.form-card h3 {
+  margin-top: 0;
+  color: #5d4037;
+  border-left: 5px solid #5d4037;
+  padding-left: 10px;
+}
+
+/* Các ô nhập liệu */
+.input-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #a1887f;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #4e342e;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #5d4037; /* Đổi màu viền khi click vào */
+  background-color: #fffde7;
+}
+
+/* Nút bấm */
+button {
+  padding: 12px 24px;
+  background-color: #5d4037; /* Màu gỗ đậm */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #3e2723;
+  transform: translateY(-2px);
+}
+
+/* Bảng danh sách */
+.table-container {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden; /* Để bo góc bảng */
+  box-shadow: 0 4px 15px rgba(62, 39, 35, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #6d4c41; /* Màu nâu đất */
+  color: white;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+/* Tạo hiệu ứng sọc ngựa vằn cho bảng */
+tbody tr:nth-child(even) {
+  background-color: #efebe9;
+}
+
+tbody tr:hover {
+  background-color: #d7ccc8; /* Màu highlight khi di chuột qua hàng */
+}
